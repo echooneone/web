@@ -46,7 +46,7 @@
       justify-content: center;
       flex-shrink: 0;
     }
-    .logo-icon svg { width: 28px; height: 28px; fill: #fff; }
+    .logo-icon img { width: 28px; height: 28px; object-fit: contain; }
     .site-title {
       font-family: 'Noto Sans SC', sans-serif;
       font-weight: 500;
@@ -140,9 +140,7 @@
   <header class="header">
     <div class="header-inner">
       <div class="header-left">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2L2 7v2h20V7L12 2zm0 2.5L18.5 7.5h-13L12 4.5zM4 11v8h2v-8H4zm4 0v8h2v-8H8zm4 0v8h2v-8h-2zm4 0v8h2v-8h-2zm4 0v8h2v-8h-2zM2 21h20v2H2v-2z"/></svg>
-        </div>
+        <img class="logo-icon" src="images/Logo.png" alt="Logo">
         <span class="site-title" id="siteTitle">龙门村档案</span>
       </div>
       <button class="translate-btn" id="translateBtn" onclick="toggleLanguage()" title="中/En 切换">
